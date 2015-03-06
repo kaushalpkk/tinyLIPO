@@ -12524,28 +12524,29 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </classes>
 <parts>
 <part name="IC1" library="lipoLib" deviceset="MCP73831" device=""/>
-<part name="R1" library="rcl" deviceset="R-EU_" device="M0805"/>
-<part name="R3" library="rcl" deviceset="R-EU_" device="M0805"/>
-<part name="C1" library="resistor" deviceset="C-EU" device="C0805"/>
-<part name="C2" library="resistor" deviceset="C-EU" device="C0805"/>
-<part name="CHG" library="adafruit" deviceset="LED" device="CHIPLED_0805"/>
-<part name="POW" library="adafruit" deviceset="LED" device="CHIPLED_0805"/>
+<part name="R1" library="rcl" deviceset="R-EU_" device="M0805" value="2.2k"/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="M0805" value="470e"/>
+<part name="C1" library="resistor" deviceset="C-EU" device="C0805" value="4.7uF"/>
+<part name="C2" library="resistor" deviceset="C-EU" device="C0805" value="4.7uF"/>
+<part name="CHG" library="adafruit" deviceset="LED" device="CHIPLED_0805" value="red"/>
+<part name="POW" library="adafruit" deviceset="LED" device="CHIPLED_0805" value="green"/>
 <part name="GND1" library="mbed-power" deviceset="GND" device=""/>
 <part name="GND2" library="mbed-power" deviceset="GND" device=""/>
 <part name="GND3" library="mbed-power" deviceset="GND" device=""/>
 <part name="GND4" library="mbed-power" deviceset="GND" device=""/>
 <part name="U+1" library="mbed-power" deviceset="+5V" device=""/>
 <part name="U+2" library="mbed-power" deviceset="+5V" device=""/>
-<part name="BATT1" library="microbuilder" deviceset="JST_2PIN" device=""/>
-<part name="USB" library="microbuilder" deviceset="USB" device="MINIBLARGE"/>
+<part name="BATT1" library="microbuilder" deviceset="JST_2PIN" device="" value="JST 2mm"/>
+<part name="USB" library="microbuilder" deviceset="USB" device="MINIBLARGE" value="micro USB"/>
 <part name="U+3" library="mbed-power" deviceset="+5V" device=""/>
 <part name="GND5" library="mbed-power" deviceset="GND" device=""/>
 <part name="GND6" library="mbed-power" deviceset="GND" device=""/>
-<part name="R2" library="rcl" deviceset="R-EU_" device="M0805"/>
-<part name="SW1" library="microbuilder" deviceset="SWITCH_SPDT" device=""/>
-<part name="BATT2" library="microbuilder" deviceset="HEADER-1X2" device=""/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
+<part name="SW1" library="microbuilder" deviceset="SWITCH_SPDT" device="" value="switch"/>
+<part name="BATT2" library="microbuilder" deviceset="HEADER-1X2" device="" value="JST2.54mm"/>
 <part name="GND7" library="mbed-power" deviceset="GND" device=""/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="M"/>
+<part name="R4" library="rcl" deviceset="R-EU_" device="M0805" value="470e"/>
 </parts>
 <sheets>
 <sheet>
@@ -12553,28 +12554,29 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="78.74" y="71.12"/>
-<instance part="R1" gate="G$1" x="99.06" y="60.96" rot="R270"/>
+<instance part="R1" gate="G$1" x="106.68" y="60.96" rot="R270"/>
 <instance part="R3" gate="G$1" x="58.42" y="66.04" rot="R90"/>
-<instance part="C1" gate="G$1" x="50.8" y="68.58"/>
-<instance part="C2" gate="G$1" x="104.14" y="68.58"/>
-<instance part="CHG" gate="G$1" x="60.96" y="60.96" rot="R90"/>
-<instance part="POW" gate="G$1" x="43.18" y="68.58"/>
-<instance part="GND1" gate="1" x="43.18" y="60.96"/>
-<instance part="GND2" gate="1" x="50.8" y="60.96"/>
-<instance part="GND3" gate="1" x="104.14" y="63.5"/>
-<instance part="GND4" gate="1" x="96.52" y="48.26"/>
-<instance part="U+1" gate="1" x="43.18" y="71.12"/>
-<instance part="U+2" gate="1" x="50.8" y="71.12"/>
-<instance part="BATT1" gate="G$1" x="116.84" y="71.12"/>
+<instance part="C1" gate="G$1" x="48.26" y="63.5"/>
+<instance part="C2" gate="G$1" x="111.76" y="68.58"/>
+<instance part="CHG" gate="G$1" x="60.96" y="55.88" rot="R90"/>
+<instance part="POW" gate="G$1" x="40.64" y="71.12"/>
+<instance part="GND1" gate="1" x="40.64" y="55.88"/>
+<instance part="GND2" gate="1" x="48.26" y="55.88"/>
+<instance part="GND3" gate="1" x="111.76" y="63.5"/>
+<instance part="GND4" gate="1" x="101.6" y="48.26"/>
+<instance part="U+1" gate="1" x="40.64" y="73.66"/>
+<instance part="U+2" gate="1" x="48.26" y="73.66"/>
+<instance part="BATT1" gate="G$1" x="124.46" y="71.12"/>
 <instance part="USB" gate="G$1" x="25.4" y="66.04"/>
-<instance part="U+3" gate="1" x="35.56" y="71.12"/>
-<instance part="GND5" gate="1" x="35.56" y="60.96"/>
-<instance part="GND6" gate="1" x="106.68" y="73.66" rot="R180"/>
-<instance part="R2" gate="G$1" x="93.98" y="60.96" rot="R270"/>
-<instance part="SW1" gate="G$1" x="96.52" y="53.34" rot="R90"/>
-<instance part="BATT2" gate="G$1" x="116.84" y="83.82"/>
-<instance part="GND7" gate="1" x="106.68" y="83.82"/>
+<instance part="U+3" gate="1" x="35.56" y="73.66"/>
+<instance part="GND5" gate="1" x="35.56" y="55.88"/>
+<instance part="GND6" gate="1" x="114.3" y="73.66" rot="R180"/>
+<instance part="R2" gate="G$1" x="96.52" y="60.96" rot="R270"/>
+<instance part="SW1" gate="G$1" x="101.6" y="53.34" rot="R90"/>
+<instance part="BATT2" gate="G$1" x="124.46" y="86.36"/>
+<instance part="GND7" gate="1" x="114.3" y="86.36"/>
 <instance part="LOGO1" gate="G$1" x="25.4" y="91.44"/>
+<instance part="R4" gate="G$1" x="40.64" y="60.96" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -12583,46 +12585,44 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="IC1" gate="G$1" pin="PROG"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="99.06" y1="66.04" x2="93.98" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="66.04" x2="96.52" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="93.98" y1="66.04" x2="91.44" y2="66.04" width="0.1524" layer="91"/>
-<junction x="93.98" y="66.04"/>
+<wire x1="96.52" y1="66.04" x2="91.44" y2="66.04" width="0.1524" layer="91"/>
+<junction x="96.52" y="66.04"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="VBAT"/>
 <pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="71.12" x2="91.44" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="86.36" x2="104.14" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="71.12" x2="91.44" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="88.9" x2="111.76" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="BATT1" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="71.12" x2="104.14" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="71.12" x2="111.76" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="BATT2" gate="G$1" pin="1"/>
-<wire x1="114.3" y1="86.36" x2="104.14" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="88.9" x2="111.76" y2="88.9" width="0.1524" layer="91"/>
+<junction x="111.76" y="71.12"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="CHG" gate="G$1" pin="A"/>
+<wire x1="58.42" y1="55.88" x2="58.42" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="STAT"/>
 <pinref part="CHG" gate="G$1" pin="C"/>
+<wire x1="66.04" y1="55.88" x2="66.04" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="POW" gate="G$1" pin="C"/>
-<pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="43.18" y1="60.96" x2="43.18" y2="63.5" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="50.8" y1="60.96" x2="50.8" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="55.88" x2="48.26" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
@@ -12631,24 +12631,29 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="USB" gate="G$1" pin="GND"/>
 <pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="35.56" y1="55.88" x2="35.56" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>
 <pinref part="IC1" gate="G$1" pin="VSS"/>
 <wire x1="91.44" y1="60.96" x2="91.44" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="48.26" x2="96.52" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="48.26" x2="101.6" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="SW1" gate="G$1" pin="P"/>
-<junction x="96.52" y="48.26"/>
+<junction x="101.6" y="48.26"/>
 </segment>
 <segment>
 <pinref part="BATT2" gate="G$1" pin="2"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="106.68" y1="83.82" x2="114.3" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="86.36" x2="121.92" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="BATT1" gate="G$1" pin="1"/>
 <pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="106.68" y1="73.66" x2="114.3" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="73.66" x2="121.92" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="GND1" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -12659,32 +12664,47 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="IC1" gate="G$1" pin="VDD"/>
 <pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="71.12" x2="66.04" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<junction x="50.8" y="71.12"/>
-<wire x1="50.8" y1="71.12" x2="58.42" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="71.12" x2="66.04" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="U+2" gate="1" pin="+5V"/>
+<junction x="58.42" y="71.12"/>
+<wire x1="48.26" y1="66.04" x2="48.26" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="71.12" x2="48.26" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="71.12" x2="48.26" y2="71.12" width="0.1524" layer="91"/>
+<junction x="48.26" y="71.12"/>
 </segment>
 <segment>
 <pinref part="USB" gate="G$1" pin="VBUS"/>
 <pinref part="U+3" gate="1" pin="+5V"/>
+<wire x1="35.56" y1="73.66" x2="35.56" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="SW1" gate="G$1" pin="S"/>
+<wire x1="106.68" y1="55.88" x2="104.14" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="SW1" gate="G$1" pin="O"/>
+<wire x1="99.06" y1="55.88" x2="96.52" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="POW" gate="G$1" pin="C"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,35.56,71.12,USB,VBUS,+5V,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
